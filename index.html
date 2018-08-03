@@ -2,53 +2,63 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>R.U Pizzaria</title>
+	<title>FIM DO MUNDO</title>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 <body>
 
-<div class="container"> <!-- inicio do container -->
-	
-	<div class="nav" >
-		<h1>Pizzaria R.U - A pior do vale</h1>
+	<div class="container"> <!--Começo do container-->
+
+		<header class="content">
+			<h1><a href="#" >Pizzaria Fim de Periodo</a></h1>
+			<div class="procurar">
+				<label for="procurar">Procurar: </label>
+				<input type="text" name="procurar">
+				<button type="submit" value="ok">ok</button>
+
+			</div>
+		</header>
+
+		<nav class="content">
+			<div class="menu">
+
+					<a href="#" >Principal</a>
+					<a href="#" >Cardápio</a>
+					<a href="#" >Reservas</a>
+					<a href="#" >Localização</a>
+					<a href="#" >Contato</a>
+			</div>
+		</nav>
+
+		<section class="content">
+			<div class="baner">
+				Pizza
+			</div>
+
+		</section>
+
+		<aside class="content subgrid">
+			<div>
+				<h2>Carnes</h2>
+				<img  src="img/steak.jpg" alt="imagem carne">
+			</div>
+
+			<div>
+				<h2>Massas</h2>
+				<img  src="img/pasta.jpg" alt="imagem massas">
+			</div>
+
+			<div>
+				<h2>Salada</h2>
+				<img  src="img/salad.jpg" alt="imagem Salada">
+			</div>
+		</aside>
+
+		<footer class="content">
+			Desenvolvido por Lucas Aragão
+		</footer>
+
 	</div>
 
-	<div class="pesquisa">
-		<form>
-			<label for="procurar">Procurar: </label>
-			<input type="text" name="prcourar">
-			<button type="submit">ok</button>
-		</form>
-	</div>
-
-	<div class="menu">
-		<ul>
-			<li><a href="#">Principal</a></li>
-			<li><a href="#">Cardapio</a></li>
-			<li><a href="#">Reservas</a></li>
-			<li><a href="#">Localização</a></li>
-			<li><a href="#">Contato</a></li>
-		</ul>	
-	</div>
-
-	<div class="baner">
-		<img src="img/pizza.png">
-	</div>
-
-	<div class="coluna1">
-		<h3>Carnes</h3>
-		<img src="img/steak.jpg">
-	</div>
-	<div class="coluna2">
-		<h3>Massas</h3>
-		<img src="img/pasta.jpg">
-	</div>
-	<div class="coluna3">
-		<h3>Saladas</h3>
-		<img src="img/salad.jpg">
-	</div>
-</div> <!-- final do container -->
-
-<footer> Site desenvido por Lucas</footer>
 </body>
 </html>

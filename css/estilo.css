@@ -1,29 +1,87 @@
-/*RESET PAGINA*/
+/*reset PAGINA*/
 *{
 	margin: 0;
 	padding: 0;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-.menu menu ul{
-	background-color: #EDEDED;
-	list-style: none;
-}
-
-.menu ul li {
-	display: inline;
-}
-
-.menu ul li a {
-	padding: 2px 10px;
-	display: inline-block;
-	text-decoration: none;
-	background-color: #EDEDED;
-	color: #333;
-}
-
-/* Inicio do grid */
+/*using GRID*/
 .container{
 	display: grid;
-	grid-template-rows: 1fr, 1fr, 1fr, 1fr;
-
+	grid-template-columns: 1fr,1fr;
+	grid-template-areas: "topo topo" "menu menu" "main main" "lado lado" "footer footer";
 }
+
+.subgrid{
+	display: grid;
+	grid-template-columns: 1fr,1fr,1fr;
+}
+
+.subgrid div {	
+	color: brown;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+  }
+
+/*style PAGE*/
+header{
+	grid-area: topo;
+	background-color: brown;
+	height: 100px;
+	padding: 20px;
+}
+
+nav{
+	grid-area: menu;
+	background-color: #410404;
+	height: 30px;
+}
+
+section{
+	grid-area: main;
+	background-image: url(../img/pizza.png); background-size: cover;
+	height: 400px;
+}
+
+aside{
+	grid-area: lado;
+}
+
+footer{
+	grid-area: footer;
+	background-color: darkgray;
+	position: relative;
+	color: white;
+}
+
+
+/*complementos PAGE*/
+
+.baner{
+	margin-top: 300px;
+	margin-left: 50px;
+	color: white;
+	background-color: indianred;
+	text-align: center;
+	width: 100px;
+	height: 50px;
+	font-size: 30px;
+}
+
+.procurar{
+	float: right;
+	color: white;
+	padding-top: 30px;
+}
+
+h1{
+	color: white;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	margin-left: 10px;
+}
+
